@@ -9,42 +9,34 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no" />
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 		<link href="style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="chosen/chosen.css" />
+		<script src="chosen/chosen.jquery.js" type="text/javascript"></script>
+
 	</head>
 
 	<body>
-	
+
+
 		<div class="banner"></div>
+			<?php
+				include("menu.php");
+			?>
+		<div class="orderarea">
+		<!-- This is where we'll put our form -->
 		
-		<table>
-		<?php
-		include("config.php");
-<<<<<<< HEAD
-		$query = "select * from books";
-		$result = mysql_query($query);
-		while ($row = mysql_fetch_assoc($result)) {
-			echo "<p>".$row["title"]." by " .$row["author"]. "</p>";
-			echo "<img src='".$row["image"]."' />";
-		}
-		?>
-=======
-		$query = "";
->>>>>>> b3dacea09ff430bf4988b594f3098ed8216df35c
 		
-		// Don’t be intimidated by the following lines. You can pretty much
-		// always copy and paste these because they’re sort of like
-		// functional bits that never change.
-		$result = mysql_query($query);
-		while ($row = mysql_fetch_assoc($result)) {
-			echo "<p>".$row["title"]."</p>";
-		}
-		?>
-		</table>
-		
-		<script type="text/javascript">
+		</div>
+			
+
+  <script type="text/javascript">
+  $(".chzn-select").chosen();
+  </script> 
+  <script type="text/javascript">
 		$("a").click(function (event) {
 		    event.preventDefault();
 		    window.location = $(this).attr("href");
 		});
-		</script>
+  </script>
+ 
 	</body>
 </html>
