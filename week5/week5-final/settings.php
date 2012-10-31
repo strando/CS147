@@ -22,45 +22,17 @@
 <div data-role="page" id="filter">
 
 	<div data-role="header">
-		<a href="index.html" data-icon="delete">Save</a>
 		<h1>Forms</h1>
-		<a href="index.html" data-icon="check">Cancel</a>
+		<a href="index.html" data-icon="check" class="ui-btn-right">Save</a>
 
 	</div><!-- /header -->
 
 	<div data-role="content">	
-<<<<<<< HEAD
-
-=======
->>>>>>> 80c70e31bcd710051971aa0c56966a16fbc3147e
-		<p></p>
-		<ul data-role="listview" data-inset="true" data-filter="true">
-			<li><a href="#">Barack Obama</a></li>
-			<li><a href="#">Mitt Romney</a></li>
-			<li><a href="#">Peta Lindsay</a></li>
-			<li><a href="#">Rocky Anderson</a></li>
-			<li><a href="#">Virgil Goode</a></li>
-			<li><a href="#">Jill Stein</a></li>
-			<li><a href="#">Gary Johnson</a></li>
-		</ul>
-		
-		<ul data-role="listview" data-inset="true">
-			<li class="taphold">Tap and hold me</li>
-			<li class="tap">Tap me</li>			
-			<li class="swiperight">Swipe me right</li>
-			<li class="swipeleft">Swipe me left</li>
-		</ul>
-		
-		<a href="#" data-role="button" data-icon="star">Star button</a>
-
-		<div data-role="collapsible">
-		   <h3>I'm a header</h3>
-		   <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
-		</div>
+	
 	
 	<form action="submit.php" method="post">
 		<div data-role="fieldcontain">
-	     <label for="foo">Text Input:</label>
+	     <label for="foo">Your name:</label>
 	     <input type="text" name="name" id="foo" value=""  />
 		</div>
 	
@@ -76,26 +48,21 @@
 	    </div>
 	
 		<div data-role="fieldcontain">
-		<label for="flip-s">Server status:</label>
+		<label for="flip-s">Have you registered to vote?</label>
 		<select name="flip-s" id="flip-s" data-role="slider">
-			<option value="off">Off</option>
-			<option value="on">On</option>
+			<option value="off">Yes</option>
+			<option value="on">No</option>
 		</select>
 	    </div>
 	
-	    <div data-role="fieldcontain">
-		<label for="slider">Max bandwidth:</label>
-		<input type="range" name="slider" id="slider" value="0" min="0" max="100" />
-	    </div>
-	
 		<div data-role="fieldcontain">
-			<label for="select-choice-x" class="select">Shipping:</label>
+			<label for="select-choice-x" class="select">Registered</label>
 			<select name="select-shipper" id="select-choice-x" >
 				<option></option>
-				<option value="standard">Standard</option>
-				<option value="rush">Rush</option>
-				<option value="express">Express</option>
-				<option value="overnight">Overnight</option>
+				<option value="standard">Republican</option>
+				<option value="rush">Democrat</option>
+				<option value="express">Libertarian</option>
+				<option value="overnight">Green Party</option>
 			</select>
 		</div>
 		<div class="ui-block-b"><button type="submit" data-theme="a">Submit</button></div>
@@ -108,8 +75,8 @@
 		<ul>
 			<li><a href="index.php" id="home" data-icon="custom">Home</a></li>
 			<li><a href="login.php" id="key" data-icon="custom">Login</a></li>
-			<li><a href="filter.php" id="beer" data-icon="custom" class="ui-btn-active">Filter</a></li>
-			<li><a href="#" id="skull" data-icon="custom">Settings</a></li>
+			<li><a href="filter.php" id="map" data-icon="custom">Filter</a></li>
+			<li><a href="settings.php" id="gear" data-icon="custom" class="ui-btn-active">Settings</a></li>
 		</ul>
 		</div>
 	</div>
