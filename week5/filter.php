@@ -29,6 +29,7 @@
 	</div><!-- /header -->
 
 	<div data-role="content">	
+
 		<p></p>
 		<ul data-role="listview" data-inset="true" data-filter="true">
 			<li><a href="#">Barack Obama</a></li>
